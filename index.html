@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>品沁酒业</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
             padding: 0;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             padding: 20px;
         }
@@ -24,27 +24,52 @@
             margin: 20px 0;
         }
         .intro img, .products img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
+            transition: transform 0.3s ease;
+        }
+        .intro img:hover, .products img:hover {
+            transform: scale(1.05);
         }
         .product {
             display: flex;
+            flex-wrap: wrap;
             margin-bottom: 20px;
+            align-items: center;
         }
         .product img {
+            flex: 1 1 30%;
             max-width: 200px;
             margin-right: 20px;
         }
         .product-details {
-            max-width: 600px;
+            flex: 1 1 65%;
         }
         .product-details h3 {
             margin-top: 0;
         }
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .product img {
+                margin-bottom: 20px;
+                margin-right: 0;
+                max-width: 100%;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container fade-in">
         <div class="header">
             <h1>品沁酒业</h1>
             <p>喝出健康 就选石斛酱酒</p>
@@ -63,22 +88,21 @@
             <div class="product">
                 <img src="pic2.jpg" alt="产品1图片">
                 <div class="product-details">
-                    <h3>产品1名称</h3>
-                 
-                    <p>华台集团坐落于驰名中外的中国第一酒镇--茅台镇酱香型酒原产地保护区内，享有得天独厚、不可复制的 气候、土壤、水源和微生物群等自然资源条件，是茅台镇历史悠久的酱香型自酒经营企业之一。华台集团的经营线前身是仁怀县茅台酿造三分厂，该始建于上世纪的1984年。建厂初期主要经营酱香型白酒，1987年与中国中医研究院合作研究制经营华台药酒。1989年“华台药酒”更名为“华台酒”，先后得到中国酿酒协会主席、酒界泰斗--秦含章老先生对“华台补酒“的评语、贵州茅台酒厂厂长--季克良对“华台补酒的评语、贵州茅台酒厂高级工程师、中国酱香之父--李兴发对“华台补酒”的评语。从此，华台補酒和酱香型白酒的销量逐年稳步攀升，在国酒之乡均居领先地位。</p>
+                    <h3>华台集团产品</h3>
+                    <p>华台集团坐落于驰名中外的中国第一酒镇--茅台镇酱香型酒原产地保护区内，享有得天独厚、不可复制的气候、土壤、水源和微生物群等自然资源条件，是茅台镇历史悠久的酱香型自酒经营企业之一。华台集团的经营线前身是仁怀县茅台酿造三分厂，该始建于上世纪的1984年。建厂初期主要经营酱香型白酒，1987年与中国中医研究院合作研究制经营华台药酒。1989年“华台药酒”更名为“华台酒”，先后得到中国酿酒协会主席、酒界泰斗--秦含章老先生对“华台补酒“的评语、贵州茅台酒厂厂长--季克良对“华台补酒”的评语、贵州茅台酒厂高级工程师、中国酱香之父--李兴发对“华台补酒”的评语。从此，华台補酒和酱香型白酒的销量逐年稳步攀升，在国酒之乡均居领先地位。</p>
                 </div>
             </div>
             <div class="product">
                 <img src="pic1.jpg" alt="产品2图片">
                 <div class="product-details">
-                    <h3>产品2名称</h3>
+                    <h3>石斛酱酒</h3>
                     <p>石斛原料采用仿野生种植，营养价值更高，采用悬崖峭壁上的野生石斛种类，移植到野外种植保留山上种植生长环境，保持野生石斛的重要药用价值和营养价值。并以贵州茅台镇酱酒核心产区纯粮酿造的酱酒基础上增加高端原料仙草--石斛，精心酿造得一款健康养生好酒。</p>
                 </div>
             </div>
             <!-- 你可以根据需要添加更多产品 -->
         </div>
         <div class="footer">
-            <p>联系我们:陈先生 | 13794939138 | 广东省 东莞市 虎门镇 体育路199号万科云广场 22栋101号品沁酒业</p>
+            <p>联系我们: 陈先生 | 13794939138 | 广东省 东莞市 虎门镇 体育路199号万科云广场 22栋101号品沁酒业</p>
         </div>
     </div>
 </body>
