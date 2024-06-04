@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header, .footer {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+        }
+        .intro, .products {
+            margin: 20px 0;
+        }
+        .intro img, .products img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+        .product-details {
+            max-width: 600px;
+        }
+        .product-details h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    你好
+    <div class="container">
+        <div class="header">
+            <h1>品沁酒业</h1>
+            <p>喝出健康 就选石斛酱酒</p>
+        </div>
+        <div class="intro">
+            <h2>店面介绍</h2>
+            <p>贵州华台石斛酱酒～具有补益脾胃，护肝利胆，强筋降脂的功效，为您的健康保驾护航。
+                端午节为回馈老顾客，特推出以下端午节福利：
+                1、买一箱送一箱（399*6=2388元，得2箱12瓶），每人限购5箱；
+                2，再送2支价值1598元贵州20年五星⭐️⭐️⭐️⭐️⭐️收藏酱酒；
+                ～喝石斛酱酒，享健康人生！</p>
+            <img src="pic3.jpg" alt="店面图片">
+        </div>
+        <div class="products">
+            <h2>产品介绍</h2>
+            <div class="product">
+                <img src="pic2.jpg" alt="产品1图片">
+                <div class="product-details">
+                    <h3>产品1名称</h3>
+                 
+                    <p>华台集团坐落于驰名中外的中国第一酒镇--茅台镇酱香型酒原产地保护区内，享有得天独厚、不可复制的 气候、土壤、水源和微生物群等自然资源条件，是茅台镇历史悠久的酱香型自酒经营企业之一。华台集团的经营线前身是仁怀县茅台酿造三分厂，该始建于上世纪的1984年。建厂初期主要经营酱香型白酒，1987年与中国中医研究院合作研究制经营华台药酒。1989年“华台药酒”更名为“华台酒”，先后得到中国酿酒协会主席、酒界泰斗--秦含章老先生对“华台补酒“的评语、贵州茅台酒厂厂长--季克良对“华台补酒的评语、贵州茅台酒厂高级工程师、中国酱香之父--李兴发对“华台补酒”的评语。从此，华台補酒和酱香型白酒的销量逐年稳步攀升，在国酒之乡均居领先地位。</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="pic1.jpg" alt="产品2图片">
+                <div class="product-details">
+                    <h3>产品2名称</h3>
+                    <p>石斛原料采用仿野生种植，营养价值更高，采用悬崖峭壁上的野生石斛种类，移植到野外种植保留山上种植生长环境，保持野生石斛的重要药用价值和营养价值。并以贵州茅台镇酱酒核心产区纯粮酿造的酱酒基础上增加高端原料仙草--石斛，精心酿造得一款健康养生好酒。</p>
+                </div>
+            </div>
+            <!-- 你可以根据需要添加更多产品 -->
+        </div>
+        <div class="footer">
+            <p>联系我们:陈先生 | 13794939138 | 广东省 东莞市 虎门镇 体育路199号万科云广场 22栋101号品沁酒业</p>
+        </div>
+    </div>
 </body>
 </html>
